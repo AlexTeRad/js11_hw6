@@ -1,0 +1,59 @@
+body {
+	display: flex;
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+	
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 400px;
+	min-height: 150px ;
+}
+form fieldset p {
+	display: flex;
+	align-items: center;
+   justify-content: space-between;
+}
+p input {
+	height: 20px;
+	width: 150px;
+}
+textarea {
+	width: 90%; 
+	height: 150px; 
+	resize: none;
+}
+.textarea {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+.box input[type="checkbox"] {
+	display: none;
+}
+.box label {
+	padding-left: 10px;
+}
+.box label::before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+   height: 15px;
+   vertical-align: middle;
+   margin-left: -10px;
+   margin-right: 10px;
+	border-radius: 30%;
+	border: 2px solid #a7c19a;
+}
+.box input[type="checkbox"]:checked + label::before {
+	content: '';
+	background-size: 100%;
+	background: url("../img/tick.png"), linear-gradient( #7cdd5e, #349300);
+}
